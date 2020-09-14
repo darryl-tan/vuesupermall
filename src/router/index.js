@@ -12,6 +12,9 @@ const Cart = () =>
 const Profile = () =>
     import ('../views/profile/Profile.vue')
 
+const Detail = () =>
+    import ('../views/detail/Detail.vue')
+
 //安装插件  1
 Vue.use(VueRouter)
     //配置routes 对应的映射关系 5
@@ -34,7 +37,12 @@ const routes = [{
     {
         path: '/profile',
         component: Profile
+    },
+    {
+        path: '/detail/:iid',
+        component: Detail
     }
+
 ]
 
 
